@@ -15,7 +15,7 @@
 		41FFFF5B24C5DAE40007F119 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FFFF5424C5DAE30007F119 /* SceneDelegate.swift */; };
 		41FFFF5C24C5DAE40007F119 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FFFF5624C5DAE30007F119 /* LoginVC.swift */; };
 		41FFFF5D24C5DAE40007F119 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FFFF5724C5DAE30007F119 /* InfoViewController.swift */; };
-		41FFFF5E24C5DAE40007F119 /* FirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FFFF5824C5DAE30007F119 /* FirstVC.swift */; };
+		41FFFF5E24C5DAE40007F119 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FFFF5824C5DAE30007F119 /* HomeVC.swift */; };
 		41FFFF5F24C5DAE40007F119 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FFFF5924C5DAE30007F119 /* SettingsViewController.swift */; };
 		41FFFF6324C5DAF30007F119 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FFFF6124C5DAF30007F119 /* ContainerViewController.swift */; };
 		41FFFF6424C5DAF30007F119 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FFFF6224C5DAF30007F119 /* MenuController.swift */; };
@@ -34,7 +34,7 @@
 		41FFFF5424C5DAE30007F119 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		41FFFF5624C5DAE30007F119 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		41FFFF5724C5DAE30007F119 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
-		41FFFF5824C5DAE30007F119 /* FirstVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstVC.swift; sourceTree = "<group>"; };
+		41FFFF5824C5DAE30007F119 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		41FFFF5924C5DAE30007F119 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		41FFFF6124C5DAF30007F119 /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		41FFFF6224C5DAF30007F119 /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
@@ -121,7 +121,7 @@
 			children = (
 				41FFFF5624C5DAE30007F119 /* LoginVC.swift */,
 				41FFFF5724C5DAE30007F119 /* InfoViewController.swift */,
-				41FFFF5824C5DAE30007F119 /* FirstVC.swift */,
+				41FFFF5824C5DAE30007F119 /* HomeVC.swift */,
 				41FFFF5924C5DAE30007F119 /* SettingsViewController.swift */,
 			);
 			path = Controller;
@@ -261,7 +261,7 @@
 			files = (
 				41FFFF5A24C5DAE40007F119 /* AppDelegate.swift in Sources */,
 				41FFFF6424C5DAF30007F119 /* MenuController.swift in Sources */,
-				41FFFF5E24C5DAE40007F119 /* FirstVC.swift in Sources */,
+				41FFFF5E24C5DAE40007F119 /* HomeVC.swift in Sources */,
 				41FFFF6324C5DAF30007F119 /* ContainerViewController.swift in Sources */,
 				41FFFF5F24C5DAE40007F119 /* SettingsViewController.swift in Sources */,
 				41FFFF6624C5DB130007F119 /* Storyboard+Extenstion.swift in Sources */,

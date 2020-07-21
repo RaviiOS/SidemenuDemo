@@ -26,12 +26,13 @@ class MenuController: UITableViewController {
     
     private var menuItems = [SideMenuItem]()
     private let darkColor = UIColor(red: 33/255.0, green: 33/255.0, blue: 33/255.0, alpha: 0.7)
-
-    //MARK:- Compund
+    
+    //MARK:- Computed properties
     lazy var headerView: UIView = {
         let view = UIView(frame: .zero)
-        view.backgroundColor = .gray
+        view.backgroundColor = UIColor.systemGray.withAlphaComponent(0.5)
         view.translatesAutoresizingMaskIntoConstraints = false
+        
         return view
     }()
     
@@ -61,23 +62,29 @@ class MenuController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.backgroundColor = darkColor
+        tableView.backgroundColor = .white
         configureHeaderView()
+        tableView.separatorStyle = .none
+        tableView.backgroundColor = UIColor.systemGroupedBackground
+        tableView.separatorColor = .clear
     }
     
     //MARK:- Setup header view
     private func configureHeaderView() {
         //TODO- Need to work on headerview
-
         tableView.tableHeaderView = headerView
         tableView.tableHeaderView?.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: 160)
-        headerView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
-        headerView.heightAnchor.constraint(equalToConstant: 160).isActive = true
+        NSLayoutConstraint.activate([
+            headerView.widthAnchor.constraint(equalTo: view.widthAnchor),
+            headerView.heightAnchor.constraint(equalToConstant: 160)
+        ])
         
         headerView.addSubview(usernameLable)
-        usernameLable.leadingAnchor.constraint(equalTo: headerView.leadingAnchor, constant: 10).isActive = true
-        usernameLable.trailingAnchor.constraint(equalTo: headerView.trailingAnchor, constant: 100).isActive = true
-        usernameLable.topAnchor.constraint(equalTo: headerView.topAnchor, constant: 30).isActive = true
+        NSLayoutConstraint.activate([
+            usernameLable.leadingAnchor.constraint(equalTo: headerView.leadingAnchor, constant: 20),
+            usernameLable.trailingAnchor.constraint(equalTo: headerView.trailingAnchor, constant: -20),
+            usernameLable.topAnchor.constraint(equalTo: headerView.topAnchor, constant: 30)
+        ])
     }
 }
 
@@ -89,9 +96,10 @@ extension MenuController{
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: UIScreen.main.bounds.width)
         cell.textLabel?.text = menuItems[indexPath.row].rawValue
-        cell.textLabel?.textColor = .white
-        cell.backgroundColor = .clear
+        cell.textLabel?.textColor = .systemPurple
+        cell.contentView.backgroundColor = UIColor.systemGroupedBackground
         return cell
     }
     

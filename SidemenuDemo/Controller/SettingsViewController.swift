@@ -9,22 +9,33 @@
 import UIKit
 
 class SettingsViewController: UIViewController {
-
+    lazy var centerLable: UILabel = {
+        let lable = UILabel(frame: .zero)
+        lable.font = UIFont(name: "System-Bold", size: 14)
+        lable.textColor = .lightGray
+        lable.contentMode = .center
+        lable.numberOfLines = 0
+        lable.sizeToFit()
+        lable.translatesAutoresizingMaskIntoConstraints = false
+        
+        return lable
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .green
-        // Do any additional setup after loading the view.
+        setupUI()
+        centerLable.text = SideMenuItem.settings.rawValue
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    // MARK: - private methods
+    private func setupUI() {
+        view.addSubview(centerLable)
+        NSLayoutConstraint.activate([
+            centerLable.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            centerLable.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            centerLable.heightAnchor.constraint(equalToConstant: 32)
+            //centerLable.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.5)
+        ])
     }
-    */
-
+    
 }

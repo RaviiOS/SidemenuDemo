@@ -21,11 +21,13 @@ enum SideMenuItem: String, CaseIterable {
 
 class MenuController: UITableViewController {
     
+    //MARK:- Properties
     public var delegate: MenuControllerDelegate?
     
     private var menuItems = [SideMenuItem]()
     private let darkColor = UIColor(red: 33/255.0, green: 33/255.0, blue: 33/255.0, alpha: 0.7)
 
+    //MARK:- Compund
     lazy var headerView: UIView = {
         let view = UIView(frame: .zero)
         view.backgroundColor = .gray
@@ -63,6 +65,24 @@ class MenuController: UITableViewController {
         configureHeaderView()
     }
     
+    //MARK:- Setup header view
+    private func configureHeaderView() {
+        //TODO- Need to work on headerview
+
+        tableView.tableHeaderView = headerView
+        tableView.tableHeaderView?.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: 160)
+        headerView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
+        headerView.heightAnchor.constraint(equalToConstant: 160).isActive = true
+        
+        headerView.addSubview(usernameLable)
+        usernameLable.leadingAnchor.constraint(equalTo: headerView.leadingAnchor, constant: 10).isActive = true
+        usernameLable.trailingAnchor.constraint(equalTo: headerView.trailingAnchor, constant: 100).isActive = true
+        usernameLable.topAnchor.constraint(equalTo: headerView.topAnchor, constant: 30).isActive = true
+    }
+}
+
+//MARK:- Tableview Delegate and data sources
+extension MenuController{
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return menuItems.count
     }
@@ -79,24 +99,5 @@ class MenuController: UITableViewController {
         tableView.deselectRow(at: indexPath, animated: true)
         let selectedItem = menuItems[indexPath.row]
         delegate?.didSelectMenuItem(named: selectedItem)
-    }
-    
-    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 160
-    }
-    
-    //MARK:- Setup header view
-    private func configureHeaderView() {
-        //TODO- Need to work on headerview
-
-        tableView.tableHeaderView = headerView
-        tableView.tableHeaderView?.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: 160)
-        headerView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
-        headerView.heightAnchor.constraint(equalToConstant: 160).isActive = true
-        
-        headerView.addSubview(usernameLable)
-        usernameLable.leadingAnchor.constraint(equalTo: headerView.leadingAnchor, constant: 10).isActive = true
-        usernameLable.trailingAnchor.constraint(equalTo: headerView.trailingAnchor, constant: 100).isActive = true
-        usernameLable.topAnchor.constraint(equalTo: headerView.topAnchor, constant: 30).isActive = true
     }
 }

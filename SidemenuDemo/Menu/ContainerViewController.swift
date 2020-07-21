@@ -31,7 +31,7 @@ class ContainerViewController: UIViewController {
         menu.delegate = self
         sideMenu?.leftSide = true
         sideMenu?.setNavigationBarHidden(true, animated: false)
-        sideMenu?.presentationStyle = .viewSlideOutMenuIn // .menuSlideIn
+        sideMenu?.presentationStyle = .menuSlideIn // .menuSlideIn , viewSlideOutMenuIn
         sideMenu?.statusBarEndAlpha = 0
         sideMenu?.alwaysAnimate = true
         sideMenu?.statusBarEndAlpha = 2.0
@@ -42,6 +42,8 @@ class ContainerViewController: UIViewController {
         sideMenu?.pushStyle = .popWhenPossible;
         sideMenu?.menuWidth = view.frame.width * 0.75;
         SideMenuManager.default.rightMenuNavigationController = nil
+//        SideMenuPresentationStyle.menuSlideIn.backgroundColor = UIColor.purple
+        sideMenu?.presentationStyle.backgroundColor = UIColor.systemGroupedBackground
         SideMenuManager.default.leftMenuNavigationController = sideMenu
         SideMenuManager.default.addPanGestureToPresent(toView: self.view)
         addChildControllers()

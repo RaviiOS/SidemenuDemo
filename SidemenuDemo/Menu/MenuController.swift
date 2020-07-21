@@ -23,24 +23,37 @@ class MenuController: UITableViewController {
     
     //MARK:- Properties
     public var delegate: MenuControllerDelegate?
-    
     private var menuItems = [SideMenuItem]()
     private let darkColor = UIColor(red: 33/255.0, green: 33/255.0, blue: 33/255.0, alpha: 0.7)
     
     //MARK:- Computed properties
     lazy var headerView: UIView = {
         let view = UIView(frame: .zero)
-        view.backgroundColor = UIColor.systemGray.withAlphaComponent(0.5)
+//        view.layer.borderWidth = 0.5
+//        view.layer.borderColor = UIColor.lightGray.cgColor
+        view.backgroundColor = UIColor.systemGroupedBackground.withAlphaComponent(0.4)
         view.translatesAutoresizingMaskIntoConstraints = false
         
         return view
     }()
     
+    lazy var profileImageView: UIImageView = {
+        let imageView = UIImageView(frame: .zero)
+//        imageView.layer.cornerRadius = 50
+//        imageView.layer.borderColor = UIColor.lightGray.cgColor
+//        imageView.layer.borderWidth = 1
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.tintColor = .purple
+        imageView.contentMode = .scaleAspectFit
+        imageView.image = UIImage(systemName: "person")
+        return imageView
+    }()
+    
     lazy var usernameLable: UILabel = {
         let lable = UILabel(frame: .zero)
-        lable.backgroundColor = .purple
         lable.text = "Ravi Kumar Yaganti"
-        lable.textColor = .white
+        lable.textColor = .lightGray
+        lable.textAlignment = .center
         lable.numberOfLines = 0
         lable.translatesAutoresizingMaskIntoConstraints = false
         
@@ -79,12 +92,21 @@ class MenuController: UITableViewController {
             headerView.heightAnchor.constraint(equalToConstant: 160)
         ])
         
+        headerView.addSubview(profileImageView)
+        NSLayoutConstraint.activate([
+            profileImageView.topAnchor.constraint(equalTo: headerView.topAnchor, constant: 20),
+            profileImageView.centerXAnchor.constraint(equalTo: headerView.centerXAnchor),
+            profileImageView.widthAnchor.constraint(equalToConstant: 100),
+            profileImageView.heightAnchor.constraint(equalToConstant: 100),
+        ])
+
         headerView.addSubview(usernameLable)
         NSLayoutConstraint.activate([
             usernameLable.leadingAnchor.constraint(equalTo: headerView.leadingAnchor, constant: 20),
             usernameLable.trailingAnchor.constraint(equalTo: headerView.trailingAnchor, constant: -20),
-            usernameLable.topAnchor.constraint(equalTo: headerView.topAnchor, constant: 30)
+            usernameLable.topAnchor.constraint(equalTo: profileImageView.bottomAnchor, constant: 10)
         ])
+        
     }
 }
 

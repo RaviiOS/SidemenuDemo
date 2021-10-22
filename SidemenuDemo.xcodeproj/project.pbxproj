@@ -20,8 +20,19 @@
 		41FFFF6324C5DAF30007F119 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FFFF6124C5DAF30007F119 /* ContainerViewController.swift */; };
 		41FFFF6424C5DAF30007F119 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FFFF6224C5DAF30007F119 /* MenuController.swift */; };
 		41FFFF6624C5DB130007F119 /* Storyboard+Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FFFF6524C5DB130007F119 /* Storyboard+Extenstion.swift */; };
+		C0E3753C2722DE9C00B06A3D /* SidemenuDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E3753B2722DE9C00B06A3D /* SidemenuDemoTests.swift */; };
 		C2808F8F369EEB01EB804480 /* Pods_SidemenuDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C59A875B5FAC330D07618793 /* Pods_SidemenuDemo.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C0E3753D2722DE9C00B06A3D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41FFFF2424C5B45E0007F119 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41FFFF2B24C5B45E0007F119;
+			remoteInfo = SidemenuDemo;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		41FFFF2C24C5B45E0007F119 /* SidemenuDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SidemenuDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,8 +51,13 @@
 		41FFFF6224C5DAF30007F119 /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		41FFFF6524C5DB130007F119 /* Storyboard+Extenstion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Storyboard+Extenstion.swift"; sourceTree = "<group>"; };
 		4A60D420A98C6DB31FF4E59C /* Pods-SidemenuDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SidemenuDemo.release.xcconfig"; path = "Target Support Files/Pods-SidemenuDemo/Pods-SidemenuDemo.release.xcconfig"; sourceTree = "<group>"; };
+		856BBB701DB9B17FE56D9D04 /* variants.xcconfig */ = {isa = PBXFileReference; explicitFileType = text.xcconfig; lastKnownFileType = text.xcconfig; name = variants.xcconfig; path = variants.xcconfig; sourceTree = "<group>"; };
+		C0E3752E2722DE1300B06A3D /* SidemenuDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidemenuDemoTests.swift; sourceTree = "<group>"; };
+		C0E375392722DE9C00B06A3D /* SidemenuDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SidemenuDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0E3753B2722DE9C00B06A3D /* SidemenuDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidemenuDemoTests.swift; sourceTree = "<group>"; };
 		C114DD03DF52FD0EC6B03171 /* Pods-SidemenuDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SidemenuDemo.debug.xcconfig"; path = "Target Support Files/Pods-SidemenuDemo/Pods-SidemenuDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		C59A875B5FAC330D07618793 /* Pods_SidemenuDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SidemenuDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7ECCB13BE14F089D323DBB2 /* Variants.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; lastKnownFileType = sourcecode.swift; name = Variants.swift; path = Variants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +66,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2808F8F369EEB01EB804480 /* Pods_SidemenuDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0E375362722DE9C00B06A3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +92,8 @@
 			isa = PBXGroup;
 			children = (
 				41FFFF2E24C5B45E0007F119 /* SidemenuDemo */,
+				C0E3752D2722DE1300B06A3D /* SidemenuDemoTests */,
+				C0E3753A2722DE9C00B06A3D /* SidemenuDemoTests */,
 				41FFFF2D24C5B45E0007F119 /* Products */,
 				221C1FB30D353476AF19D655 /* Pods */,
 				C15F92914D54A8CB395883F1 /* Frameworks */,
@@ -79,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				41FFFF2C24C5B45E0007F119 /* SidemenuDemo.app */,
+				C0E375392722DE9C00B06A3D /* SidemenuDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,6 +120,7 @@
 				41FFFF3824C5B4670007F119 /* Assets.xcassets */,
 				41FFFF3A24C5B4670007F119 /* LaunchScreen.storyboard */,
 				41FFFF3D24C5B4670007F119 /* Info.plist */,
+				F968A1B099E28C86F0C5E942 /* Variants */,
 			);
 			path = SidemenuDemo;
 			sourceTree = "<group>";
@@ -136,12 +163,38 @@
 			path = Menu;
 			sourceTree = "<group>";
 		};
+		C0E3752D2722DE1300B06A3D /* SidemenuDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				C0E3752E2722DE1300B06A3D /* SidemenuDemoTests.swift */,
+			);
+			path = SidemenuDemoTests;
+			sourceTree = "<group>";
+		};
+		C0E3753A2722DE9C00B06A3D /* SidemenuDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				C0E3753B2722DE9C00B06A3D /* SidemenuDemoTests.swift */,
+			);
+			path = SidemenuDemoTests;
+			sourceTree = "<group>";
+		};
 		C15F92914D54A8CB395883F1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				C59A875B5FAC330D07618793 /* Pods_SidemenuDemo.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F968A1B099E28C86F0C5E942 /* Variants */ = {
+			isa = PBXGroup;
+			children = (
+				856BBB701DB9B17FE56D9D04 /* variants.xcconfig */,
+				F7ECCB13BE14F089D323DBB2 /* Variants.swift */,
+			);
+			name = Variants;
+			path = Variants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,18 +219,40 @@
 			productReference = 41FFFF2C24C5B45E0007F119 /* SidemenuDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C0E375382722DE9C00B06A3D /* SidemenuDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0E3753F2722DE9C00B06A3D /* Build configuration list for PBXNativeTarget "SidemenuDemoTests" */;
+			buildPhases = (
+				C0E375352722DE9C00B06A3D /* Sources */,
+				C0E375362722DE9C00B06A3D /* Frameworks */,
+				C0E375372722DE9C00B06A3D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0E3753E2722DE9C00B06A3D /* PBXTargetDependency */,
+			);
+			name = SidemenuDemoTests;
+			productName = SidemenuDemoTests;
+			productReference = C0E375392722DE9C00B06A3D /* SidemenuDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		41FFFF2424C5B45E0007F119 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1120;
+				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = "Ravi kumar Yaganti";
 				TargetAttributes = {
 					41FFFF2B24C5B45E0007F119 = {
 						CreatedOnToolsVersion = 11.2.1;
+					};
+					C0E375382722DE9C00B06A3D = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 41FFFF2B24C5B45E0007F119;
 					};
 				};
 			};
@@ -195,6 +270,7 @@
 			projectRoot = "";
 			targets = (
 				41FFFF2B24C5B45E0007F119 /* SidemenuDemo */,
+				C0E375382722DE9C00B06A3D /* SidemenuDemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -207,6 +283,13 @@
 				41FFFF3C24C5B4670007F119 /* LaunchScreen.storyboard in Resources */,
 				41FFFF3924C5B4670007F119 /* Assets.xcassets in Resources */,
 				41FFFF3724C5B45E0007F119 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0E375372722DE9C00B06A3D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,9 +326,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SidemenuDemo/Pods-SidemenuDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SidemenuDemo/Pods-SidemenuDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -269,10 +356,27 @@
 				41FFFF5C24C5DAE40007F119 /* LoginVC.swift in Sources */,
 				41FFFF5B24C5DAE40007F119 /* SceneDelegate.swift in Sources */,
 				41FFFF5D24C5DAE40007F119 /* InfoViewController.swift in Sources */,
+				"TEMP_8E5542E9-8BF7-4D9E-8596-88989D9E5060" /* (null) in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0E375352722DE9C00B06A3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0E3753C2722DE9C00B06A3D /* SidemenuDemoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C0E3753E2722DE9C00B06A3D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41FFFF2B24C5B45E0007F119 /* SidemenuDemo */;
+			targetProxy = C0E3753D2722DE9C00B06A3D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		41FFFF3524C5B45E0007F119 /* Main.storyboard */ = {
@@ -410,18 +514,19 @@
 		};
 		41FFFF4124C5B4670007F119 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C114DD03DF52FD0EC6B03171 /* Pods-SidemenuDemo.debug.xcconfig */;
+			baseConfigurationReference = 856BBB701DB9B17FE56D9D04 /* variants.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TKPH5F8CGQ;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "$(V_APP_ICON)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SidemenuDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rk.com.SidemenuDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(V_BUNDLE_ID)";
+				PRODUCT_NAME = "$(V_APP_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -429,20 +534,71 @@
 		};
 		41FFFF4224C5B4670007F119 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4A60D420A98C6DB31FF4E59C /* Pods-SidemenuDemo.release.xcconfig */;
+			baseConfigurationReference = 856BBB701DB9B17FE56D9D04 /* variants.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TKPH5F8CGQ;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "$(V_APP_ICON)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SidemenuDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rk.com.SidemenuDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(V_BUNDLE_ID)";
+				PRODUCT_NAME = "$(V_APP_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C0E375402722DE9C00B06A3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rk.com.SidemenuDemo.SidemenuDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SidemenuDemo.app/SidemenuDemo";
+			};
+			name = Debug;
+		};
+		C0E375412722DE9C00B06A3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rk.com.SidemenuDemo.SidemenuDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SidemenuDemo.app/SidemenuDemo";
 			};
 			name = Release;
 		};
@@ -463,6 +619,15 @@
 			buildConfigurations = (
 				41FFFF4124C5B4670007F119 /* Debug */,
 				41FFFF4224C5B4670007F119 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0E3753F2722DE9C00B06A3D /* Build configuration list for PBXNativeTarget "SidemenuDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0E375402722DE9C00B06A3D /* Debug */,
+				C0E375412722DE9C00B06A3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

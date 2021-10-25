@@ -1,6 +1,13 @@
 name: GitHub Actions Demo
 on: [push]
 jobs:
+- uses: backbase/variants@main
+  with:
+    spec: variants.yml
+    platform: ios
+    variant: beta
+    verbose: true
+    
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:

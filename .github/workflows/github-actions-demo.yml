@@ -1,3 +1,5 @@
+name: GitHub Actions Demo
+on: [push]
 name: branch
 
 on:

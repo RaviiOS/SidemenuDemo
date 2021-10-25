@@ -14,6 +14,7 @@ jobs:
     runs-on: macos-latest
 
     steps:
+     - checkout
 #    - uses: actions/checkout@v2
 #
 #    - name: Test CLI Package

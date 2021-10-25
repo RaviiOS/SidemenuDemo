@@ -27,6 +27,7 @@ class MenuController: UITableViewController {
     private let darkColor = UIColor(red: 33/255.0, green: 33/255.0, blue: 33/255.0, alpha: 0.7)
     
     //MARK:- Computed properties
+    
     lazy var headerView: UIView = {
         let view = UIView(frame: .zero)
 //        view.layer.borderWidth = 0.5

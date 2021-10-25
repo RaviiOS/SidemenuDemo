@@ -33,7 +33,7 @@ jobs:
 
     - uses: backbase/variants@main
       with:
-       variant: test
+       variant: BETA
        platform: ios
        verbose: true
 

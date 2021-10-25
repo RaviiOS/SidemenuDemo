@@ -1,10 +1,11 @@
+name: Test WorkFlow
 on: [push]
 name: branch
 
-on:
-  pull_request:
-    types: [ opened, synchronize ]
-    branches: [ develop ]
+#on:
+#  pull_request:
+#    types: [ opened, synchronize ]
+#    branches: [ develop ]
 env:
   DEVELOPER_DIR: /Applications/Xcode_12.app/Contents/Developer
 

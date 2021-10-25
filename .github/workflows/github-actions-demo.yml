@@ -31,7 +31,7 @@ jobs:
 #    - name: Code coverage report
 #      run: bundle exec slather coverage
 
-    - uses: backbase/variants@0.9.3
+    - uses: backbase/variants@main
       with:
        variant: test
        verbose: true

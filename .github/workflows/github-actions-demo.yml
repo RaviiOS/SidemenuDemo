@@ -34,6 +34,7 @@ jobs:
     - uses: backbase/variants@main
       with:
        variant: test
+       platform: ios
        verbose: true
 
 

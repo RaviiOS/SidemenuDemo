@@ -32,7 +32,8 @@ jobs:
 #    - name: Code coverage report
 #      run: bundle exec slather coverage
 
-    - uses: backbase/variants@defect/github_action_automatic_platform_detection
+#    - uses: backbase/variants@defect/github_action_automatic_platform_detection
+#    - uses: backbase/variants@main
       with:
        variant: BETA
 #       platform: ios

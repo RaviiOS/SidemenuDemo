@@ -35,5 +35,5 @@ jobs:
     - uses: backbase/variants@defect/github_action_automatic_platform_detection
       with:
        variant: BETA
-       platform: ios
+#       platform: ios
        verbose: true

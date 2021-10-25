@@ -15,9 +15,13 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
-      - uses: backbase/variants@main
-        with:
-         spec: variants.yml
-#         platform: ios
-         variant: beta
-         verbose: true
+#      - uses: backbase/variants@main
+#        with:
+#         spec: variants.yml
+##         platform: ios
+#         variant: beta
+#         verbose: true
+       - uses: backbase/variants@0.9.1
+         with:
+          variant: test
+          verbose: true

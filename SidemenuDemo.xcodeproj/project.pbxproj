@@ -35,7 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		41FFFF2C24C5B45E0007F119 /* SidemenuDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SidemenuDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		41FFFF2C24C5B45E0007F119 /* SidemenuDemo BETA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SidemenuDemo BETA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		41FFFF3624C5B45E0007F119 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		41FFFF3824C5B4670007F119 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41FFFF3B24C5B4670007F119 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,13 +51,13 @@
 		41FFFF6224C5DAF30007F119 /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		41FFFF6524C5DB130007F119 /* Storyboard+Extenstion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Storyboard+Extenstion.swift"; sourceTree = "<group>"; };
 		4A60D420A98C6DB31FF4E59C /* Pods-SidemenuDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SidemenuDemo.release.xcconfig"; path = "Target Support Files/Pods-SidemenuDemo/Pods-SidemenuDemo.release.xcconfig"; sourceTree = "<group>"; };
-		856BBB701DB9B17FE56D9D04 /* variants.xcconfig */ = {isa = PBXFileReference; explicitFileType = text.xcconfig; lastKnownFileType = text.xcconfig; name = variants.xcconfig; path = variants.xcconfig; sourceTree = "<group>"; };
+		856BBB701DB9B17FE56D9D04 /* variants.xcconfig */ = {isa = PBXFileReference; explicitFileType = text.xcconfig; path = variants.xcconfig; sourceTree = "<group>"; };
 		C0E3752E2722DE1300B06A3D /* SidemenuDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidemenuDemoTests.swift; sourceTree = "<group>"; };
 		C0E375392722DE9C00B06A3D /* SidemenuDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SidemenuDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0E3753B2722DE9C00B06A3D /* SidemenuDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidemenuDemoTests.swift; sourceTree = "<group>"; };
 		C114DD03DF52FD0EC6B03171 /* Pods-SidemenuDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SidemenuDemo.debug.xcconfig"; path = "Target Support Files/Pods-SidemenuDemo/Pods-SidemenuDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		C59A875B5FAC330D07618793 /* Pods_SidemenuDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SidemenuDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F7ECCB13BE14F089D323DBB2 /* Variants.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; lastKnownFileType = sourcecode.swift; name = Variants.swift; path = Variants.swift; sourceTree = "<group>"; };
+		F7ECCB13BE14F089D323DBB2 /* Variants.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Variants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +103,7 @@
 		41FFFF2D24C5B45E0007F119 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				41FFFF2C24C5B45E0007F119 /* SidemenuDemo.app */,
+				41FFFF2C24C5B45E0007F119 /* SidemenuDemo BETA.app */,
 				C0E375392722DE9C00B06A3D /* SidemenuDemoTests.xctest */,
 			);
 			name = Products;
@@ -193,7 +193,6 @@
 				856BBB701DB9B17FE56D9D04 /* variants.xcconfig */,
 				F7ECCB13BE14F089D323DBB2 /* Variants.swift */,
 			);
-			name = Variants;
 			path = Variants;
 			sourceTree = "<group>";
 		};
@@ -216,7 +215,7 @@
 			);
 			name = SidemenuDemo;
 			productName = SidemenuDemo;
-			productReference = 41FFFF2C24C5B45E0007F119 /* SidemenuDemo.app */;
+			productReference = 41FFFF2C24C5B45E0007F119 /* SidemenuDemo BETA.app */;
 			productType = "com.apple.product-type.application";
 		};
 		C0E375382722DE9C00B06A3D /* SidemenuDemoTests */ = {
@@ -356,7 +355,6 @@
 				41FFFF5C24C5DAE40007F119 /* LoginVC.swift in Sources */,
 				41FFFF5B24C5DAE40007F119 /* SceneDelegate.swift in Sources */,
 				41FFFF5D24C5DAE40007F119 /* InfoViewController.swift in Sources */,
-				"TEMP_8E5542E9-8BF7-4D9E-8596-88989D9E5060" /* (null) in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

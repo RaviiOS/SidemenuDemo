@@ -10,7 +10,7 @@ MATCH_PARAMS = {
   MATCH_PASSWORD: ENV['MATCH_PASSWORD'],
   
   # Signing properties coming from Variants YAML spec. Do not change manually
-  TEAMNAME: "iPhone Distribution",
-  TEAMID: "AB1234567D",
-  EXPORTMETHOD: "appstore",
+  TEAMNAME: "iPhone Distribution: Enterprise Sample",
+  TEAMID: "A712345686",
+  EXPORTMETHOD: "enterprise",
 }.freeze

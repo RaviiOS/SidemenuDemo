@@ -30,8 +30,8 @@ class MenuController: UITableViewController {
     
     lazy var headerView: UIView = {
         let view = UIView(frame: .zero)
-//        view.layer.borderWidth = 0.5
-//        view.layer.borderColor = UIColor.lightGray.cgColor
+        view.layer.borderWidth = 0.5
+        view.layer.borderColor = UIColor.lightGray.cgColor
         view.backgroundColor = UIColor.systemGroupedBackground.withAlphaComponent(0.4)
         view.translatesAutoresizingMaskIntoConstraints = false
         

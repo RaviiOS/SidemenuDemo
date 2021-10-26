@@ -44,7 +44,7 @@ class MenuController: UITableViewController {
         imageView.layer.borderColor = UIColor.lightGray.cgColor
 //        imageView.layer.borderWidth = 1
         imageView.translatesAutoresizingMaskIntoConstraints = false
-//        imageView.tintColor = .purple
+        imageView.tintColor = .purple
         imageView.contentMode = .scaleAspectFit
         imageView.image = UIImage(systemName: "person")
         return imageView

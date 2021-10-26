@@ -42,7 +42,7 @@ class MenuController: UITableViewController {
         let imageView = UIImageView(frame: .zero)
 //        imageView.layer.cornerRadius = 50
         imageView.layer.borderColor = UIColor.lightGray.cgColor
-        imageView.layer.borderWidth = 1
+//        imageView.layer.borderWidth = 1
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.tintColor = .purple
         imageView.contentMode = .scaleAspectFit

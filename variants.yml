@@ -7,9 +7,9 @@ ios:
     xcodeproj: SidemenuDemo.xcodeproj
     targets:
       SidemenuDemo:
-        name: {{ APP_NAME }}
+        name: SidemenuDemo
         bundle_id: com.rk.com.SidemenuDemo
-        test_target: {{ TEST_TARGET }}
+        test_target: SidemenuDemoTests
         app_icon: AppIcon
         source:
           path: SidemenuDemo
@@ -30,7 +30,7 @@ ios:
             # 'match_url' isn't mandatory, only if you use Match to sign your app
             # match_url: "git@github.com:sample/match.git"
             team_name: "iPhone Distribution"
-            team_id: "AB1234567D"
+            team_id: "BA1234564Y"
         
         #
         # custom: - Not required.
@@ -72,7 +72,7 @@ ios:
             # 'match_url' isn't mandatory, only if you use Match to sign your app
             # match_url: "git@github.com:sample/match.git"
             team_name: "iPhone Distribution: Enterprise Sample"
-            team_id: "7A1234567D"
+            team_id: "A712345686"
             export_method: "enterprise"
             
         custom:
@@ -89,7 +89,7 @@ ios:
         # 'match_url' isn't mandatory, only if you use Match to sign your app
         #match_url: "git@github.com:sample/match.git"
         team_name: "iPhone Distribution"
-        team_id: "AB1234567D"
+        team_id: "CA12345686"
         export_method: "appstore"
     
     # ----------------------------------------------------------------------

@@ -27,10 +27,11 @@ class MenuController: UITableViewController {
     private let darkColor = UIColor(red: 33/255.0, green: 33/255.0, blue: 33/255.0, alpha: 0.7)
     
     //MARK:- Computed properties
+    
     lazy var headerView: UIView = {
         let view = UIView(frame: .zero)
-//        view.layer.borderWidth = 0.5
-//        view.layer.borderColor = UIColor.lightGray.cgColor
+        view.layer.borderWidth = 0.5
+        view.layer.borderColor = UIColor.lightGray.cgColor
         view.backgroundColor = UIColor.systemGroupedBackground.withAlphaComponent(0.4)
         view.translatesAutoresizingMaskIntoConstraints = false
         
@@ -41,7 +42,7 @@ class MenuController: UITableViewController {
         let imageView = UIImageView(frame: .zero)
 //        imageView.layer.cornerRadius = 50
 //        imageView.layer.borderColor = UIColor.lightGray.cgColor
-//        imageView.layer.borderWidth = 1
+        imageView.layer.borderWidth = 1
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.tintColor = .purple
         imageView.contentMode = .scaleAspectFit
@@ -83,6 +84,7 @@ class MenuController: UITableViewController {
     }
     
     //MARK:- Setup header view
+    
     private func configureHeaderView() {
         //TODO- Need to work on headerview
         tableView.tableHeaderView = headerView
@@ -111,6 +113,7 @@ class MenuController: UITableViewController {
 }
 
 //MARK:- Tableview Delegate and data sources
+
 extension MenuController{
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return menuItems.count

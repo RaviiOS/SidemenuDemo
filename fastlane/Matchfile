@@ -1,0 +1,6 @@
+# Sample: "git@github.com:backbase/match.git"
+git_url(YOUR_MATCH_GIT_URL)
+storage_mode("git")
+# appstore, development, adhoc, enterprise
+type("enterprise")
+app_identifier("com.rk.com.SidemenuDemo.beta")

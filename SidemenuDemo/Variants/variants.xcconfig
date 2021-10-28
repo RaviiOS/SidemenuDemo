@@ -1,0 +1,6 @@
+V_BUNDLE_ID = com.rk.com.SidemenuDemo.beta
+V_VERSION_NAME = 0.0.1
+V_APP_NAME = SidemenuDemo BETA
+OTHER_SWIFT_FLAGS = $(inherited)
+V_APP_ICON = AppIcon.beta
+V_VERSION_NUMBER = 1

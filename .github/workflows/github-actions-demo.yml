@@ -37,4 +37,4 @@ jobs:
       with:
        variant: BETA
        platform: ios
-       verbose: true
+       verbose: false

@@ -36,5 +36,5 @@ jobs:
 #    - uses: backbase/variants@main
       with:
        variant: BETA
-       platform: android
+#       platform: android
        verbose: true
